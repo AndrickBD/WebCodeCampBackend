@@ -12,5 +12,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/users', users);
+app.use(require('./routes/Talks'));
+app.use(require('./routes/Speakers'));
 
 module.exports = app;
